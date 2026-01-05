@@ -1,3 +1,20 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+}
+
+#main-bottom-pattern-curve {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 285px;
+  height: 72px;
+}
+
 /* MOBILE (375px and up) */
 @media (min-width: 375px) {
 }
@@ -8,4 +25,7 @@
 
 /* DESKTOP (1440px and up) */
 @media (min-width: 1440px) {
+  main {
+    justify-content: center;
+  }
 }

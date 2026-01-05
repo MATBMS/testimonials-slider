@@ -11,13 +11,10 @@
 @import url("./components/form.css");
 
 /* Layout */
-@import url("./layout/grid.css");
 @import url("./layout/main-layout.css");
 
 /* Sections */
-@import url("./sections/header.css");
-@import url("./sections/main.css");
-@import url("./sections/footer.css");
+@import url("./sections/testimonials.css");
 
 /* Utilities - Must be last to override other styles */
 @import url("./utilities/display.css");

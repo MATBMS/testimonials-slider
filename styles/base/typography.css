@@ -11,3 +11,55 @@
 * {
   font-family: "Inter", sans-serif;
 }
+
+p {
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 135%;
+  color: var(--color-blue-950);
+}
+
+.user-name {
+  font-size: 15px;
+  text-align: center;
+  color: var(--color-blue-950);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 135%;
+}
+
+.user-job {
+  font-size: 15px;
+  text-align: center;
+  color: var(--color-gray-400);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 135%;
+}
+
+/* TABLET (768px and up) */
+@media (min-width: 768px) {
+  p {
+    font-size: 32px;
+    line-height: 137.5%;
+  }
+
+  .user-name {
+    font-size: 20px;
+    line-height: 190%;
+  }
+
+  .user-job {
+    font-size: 20px;
+    line-height: 190%;
+  }
+}
+
+/* DESKTOP (1440px and up) */
+@media (min-width: 1440px) {
+  p {
+    text-align: left;
+  }
+}
