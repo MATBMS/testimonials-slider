@@ -16,13 +16,13 @@
   align-items: center;
   width: 326.5px;
   height: 307.5px;
-  background-image: url("../../images/pattern-bg.svg");
+  background-image: url('../../images/pattern-bg.svg');
   background-size: contain;
   background-repeat: no-repeat;
   position: relative;
 }
 
-.avatar-image {
+.avatar {
   width: 254px;
   height: 253px;
 }
@@ -88,7 +88,7 @@
     height: 489.74px;
   }
 
-  .avatar-image {
+  .avatar {
     width: 404.533px;
     height: 402.94px;
   }
@@ -152,7 +152,7 @@
     overflow: visible;
   }
 
-  .avatar-image {
+  .avatar {
     width: 540px;
     height: 540px;
   }

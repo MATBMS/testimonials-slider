@@ -1,15 +1,15 @@
 /* IMPORT */
 
 @font-face {
-  font-family: "Inter";
-  src: url("../../fonts/Inter.ttf") format("truetype");
+  font-family: 'Inter';
+  src: url('../../fonts/Inter.ttf') format('truetype');
   font-display: swap;
 }
 
 /* ALL */
 
 * {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 p {
@@ -30,7 +30,7 @@ p {
   line-height: 135%;
 }
 
-.user-job {
+.user-role {
   font-size: 15px;
   text-align: center;
   color: var(--color-gray-400);
@@ -51,7 +51,7 @@ p {
     line-height: 190%;
   }
 
-  .user-job {
+  .user-role {
     font-size: 20px;
     line-height: 190%;
   }
