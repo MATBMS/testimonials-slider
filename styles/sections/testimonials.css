@@ -55,6 +55,10 @@
   justify-content: center;
 }
 
+.arrow-btn:disabled {
+  cursor: not-allowed;
+}
+
 /* testimonials */
 .testimonials-text-container {
   width: 311px;

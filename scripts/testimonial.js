@@ -1,4 +1,4 @@
-// Create variable
+// DOM elements
 const quote = document.querySelector('.quotes');
 const userName = document.querySelector('.user-name');
 const userRole = document.querySelector('.user-role');
@@ -6,7 +6,7 @@ const avatar = document.querySelector('.avatar');
 const btnPrev = document.querySelector('#btn-prev');
 const btnNext = document.querySelector('#btn-next');
 
-// Import data
+// Contents
 const testimonials = [
   {
     text: `“ I\’ve been interested in coding for a while but never taken the jump, until now. I couldn\’t recommend this course enough. I\’m now in the job of my dreams and so excited about the \”`,
@@ -50,8 +50,17 @@ function go(delta) {
   const next = clamp(index + delta, 0, testimonials.length - 1);
   if (next === index) return;
   index = next;
+  // Disable inactive button
+  btnPrev.disabled = index === 0;
+  btnNext.disabled = index === testimonials.length - 1;
   render(index);
 }
 
 btnPrev.addEventListener('click', () => go(-1));
 btnNext.addEventListener('click', () => go(1));
+
+// Accessibility: keyboard support
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'ArrowLeft') go(-1);
+  if (e.key === 'ArrowRight') go(1);
+});

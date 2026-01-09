@@ -17,7 +17,13 @@
   </head>
   <body>
     <main>
-      <section id="testimonials">
+      <section
+        id="testimonials"
+        aria-live="polite"
+        aria-atomic="true"
+        aria-roledescription="carousel"
+      >
+        <h1 class="sr-only">Customer Testimonials</h1>
         <div class="testimonials-avatar-container">
           <img
             class="avatar"
@@ -74,8 +80,9 @@
         <div class="testimonials-text-container">
           <img
             src="./images/pattern-quotes.svg"
-            alt="pattern quotes"
+            alt=""
             class="pattern-quotes"
+            role="presentation"
           />
           <p class="quotes"></p>
           <div class="user-info">
