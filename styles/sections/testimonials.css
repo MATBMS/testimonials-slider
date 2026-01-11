@@ -18,13 +18,14 @@
   height: 307.5px;
   background-image: url('../../images/pattern-bg.svg');
   background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   position: relative;
 }
 
 .avatar {
   width: 254px;
-  height: 253px;
+  height: auto;
 }
 
 .arrows {
