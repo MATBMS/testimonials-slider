@@ -28,10 +28,10 @@ function render(i) {
   const testimonial = testimonials[i];
 
   // Fade out
-  quote.style.opacity = '0';
-  userName.style.opacity = '0';
-  userRole.style.opacity = '0';
-  avatar.style.opacity = '0';
+  quote.classList.add('fade-out');
+  userName.classList.add('fade-out');
+  userRole.classList.add('fade-out');
+  avatar.classList.add('fade-out');
 
   // Wait for fade out, then update content and fade in
   setTimeout(() => {
@@ -43,16 +43,15 @@ function render(i) {
     avatar.alt = `${testimonial.name} portrait`;
 
     // Fade in
-    quote.style.opacity = '1';
-    userName.style.opacity = '1';
-    userRole.style.opacity = '1';
-    avatar.style.opacity = '1';
+    quote.classList.remove('fade-out');
+    userName.classList.remove('fade-out');
+    userRole.classList.remove('fade-out');
+    avatar.classList.remove('fade-out');
   }, 300); // Match this to your transition duration
 }
 
 // Init
 let index = 0;
-render(index);
 
 // Slider
 function clamp(n, min, max) {
