@@ -1,5 +1,5 @@
-/* COLORS */
 :root {
+  /* COLORS */
   /* black & white */
   --color-black: #000000;
   --color-white: #ffffff;
@@ -15,22 +15,23 @@
   --color-blue-950: #202047;
   /* gradient from #9975d0 to #4a3fdb */
   --color-gradient: linear-gradient(to right, #9975d0, #4a3fdb);
-}
 
-/* SPACING */
-:root {
-  --spacing-0: 0px;
-  --spacing-100: 8px;
-  --spacing-200: 16px;
-  --spacing-300: 24px;
-  --spacing-400: 32px;
-  --spacing-500: 40px;
-  --spacing-600: 48px;
-  --spacing-700: 56px;
-  --spacing-800: 64px;
-  --spacing-900: 72px;
-  --spacing-1000: 80px;
-  --spacing-1100: 88px;
-  --spacing-1200: 96px;
-  --spacing-1300: 104px;
+  /* BOX SHADOW */
+  --box-shadow: 0 15px 20px -10px rgba(36, 36, 113, 0.1);
+
+  /* SPACING */
+  --spacing-0: 0;
+  --spacing-100: 0.5rem;
+  --spacing-200: 1rem;
+  --spacing-300: 1.5rem;
+  --spacing-400: 2rem;
+  --spacing-500: 2.5rem;
+  --spacing-600: 3rem;
+  --spacing-700: 3.5rem;
+  --spacing-800: 4rem;
+  --spacing-900: 4.5rem;
+  --spacing-1000: 5rem;
+  --spacing-1100: 5.5rem;
+  --spacing-1200: 6rem;
+  --spacing-1300: 6.5rem;
 }

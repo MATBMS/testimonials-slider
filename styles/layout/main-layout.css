@@ -17,7 +17,7 @@ main {
 }
 
 /* DESKTOP (1440px and up) */
-@media (min-width: 1440px) {
+@media (min-width: 90em) {
   main {
     justify-content: center;
   }

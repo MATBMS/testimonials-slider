@@ -1,11 +1,11 @@
 /* section */
-#testimonials {
+.testimonials {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: var(--spacing-700);
-  padding: 24px;
+  padding: 1.5rem;
 }
 
 /* avatar */
@@ -30,20 +30,18 @@
 
 .arrows {
   position: absolute;
-  bottom: 5px;
+  bottom: 0.3125rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 80px;
-  height: 40px;
+  width: 5rem;
+  height: 2.5rem;
   padding: var(--spacing-0) var(--spacing-200);
-  justify-content: center;
-  align-items: center;
   gap: var(--spacing-400);
-  border-radius: 28px;
+  border-radius: 1.75rem;
   background: var(--color-white);
-  box-shadow: 0 15px 20px -10px rgba(36, 36, 113, 0.1);
+  box-shadow: var(--box-shadow);
 }
 
 .arrow-btn {
@@ -66,7 +64,7 @@
 
 /* testimonials */
 .testimonials-text-container {
-  width: 311px;
+  width: 19.4375rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -78,7 +76,7 @@
   position: absolute;
   width: 60px;
   height: 50px;
-  top: -25px;
+  top: -1.5625rem;
 }
 
 .user-info {
@@ -87,9 +85,9 @@
 }
 
 /* TABLET (768px and up) */
-@media (min-width: 768px) {
-  #testimonials {
-    gap: 140px;
+@media (min-width: 48em) {
+  .testimonials {
+    gap: 8.75rem;
   }
 
   .testimonials-avatar-container {
@@ -103,24 +101,24 @@
   }
 
   .arrows {
-    bottom: 15px;
+    bottom: 0.9375rem;
     display: flex;
-    width: 112px;
-    height: 56px;
+    width: 7rem;
+    height: 3.5rem;
     padding: var(--spacing-0) var(--spacing-300);
     align-items: center;
     gap: var(--spacing-600);
   }
 
   .testimonials-text-container {
-    width: 635px;
+    width: 39.6875rem;
     gap: var(--spacing-400);
   }
 
   .pattern-quotes {
     width: 120px;
     height: 100px;
-    top: -75px;
+    top: -4.6875rem;
   }
 
   .user-info {
@@ -130,28 +128,28 @@
 }
 
 /* DESKTOP (1440px and up) */
-@media (min-width: 1440px) {
-  #testimonials {
+@media (min-width: 90em) {
+  .testimonials {
     flex-direction: row-reverse;
-    width: 1200px;
+    width: 75rem;
     min-height: 100vh;
-    gap: 0px;
+    gap: 0;
     padding: 0;
   }
 
   .testimonials-text-container {
     align-items: start;
     z-index: 2;
-    transform: translateX(130px);
+    transform: translateX(8.125rem);
   }
 
   .pattern-quotes {
-    top: -75px;
-    left: 96px;
+    top: -4.6875rem;
+    left: 6rem;
   }
 
   .quotes {
-    width: 560px;
+    width: 35rem;
   }
 
   .testimonials-avatar-container {
@@ -167,7 +165,7 @@
   }
 
   .arrows {
-    left: 127px;
-    bottom: 26px;
+    left: 7.9375rem;
+    bottom: 1.625rem;
   }
 }

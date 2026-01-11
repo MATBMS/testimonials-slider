@@ -13,7 +13,7 @@
 }
 
 p {
-  font-size: 18px;
+  font-size: 1.125rem;
   text-align: center;
   font-style: normal;
   font-weight: 300;
@@ -22,7 +22,7 @@ p {
 }
 
 .user-name {
-  font-size: 15px;
+  font-size: 0.9375rem;
   text-align: center;
   color: var(--color-blue-950);
   font-style: normal;
@@ -31,7 +31,7 @@ p {
 }
 
 .user-role {
-  font-size: 15px;
+  font-size: 0.9375rem;
   text-align: center;
   color: var(--color-gray-400);
   font-style: normal;
@@ -40,25 +40,25 @@ p {
 }
 
 /* TABLET (768px and up) */
-@media (min-width: 768px) {
+@media (min-width: 48em) {
   p {
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 137.5%;
   }
 
   .user-name {
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 190%;
   }
 
   .user-role {
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 190%;
   }
 }
 
 /* DESKTOP (1440px and up) */
-@media (min-width: 1440px) {
+@media (min-width: 90em) {
   p {
     text-align: left;
   }
