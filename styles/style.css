@@ -1,22 +1,14 @@
 /* Base */
-@import url("./base/reset.css");
-@import url("./base/variables.css");
-@import url("./base/typography.css");
-@import url("./base/animation.css");
-
-/* Components */
-@import url("./components/button.css");
-@import url("./components/card.css");
-@import url("./components/navbar.css");
-@import url("./components/form.css");
+@import url('./base/reset.css');
+@import url('./base/variables.css');
+@import url('./base/typography.css');
+@import url('./base/animation.css');
 
 /* Layout */
-@import url("./layout/main-layout.css");
+@import url('./layout/main-layout.css');
 
 /* Sections */
-@import url("./sections/testimonials.css");
+@import url('./sections/testimonials.css');
 
 /* Utilities - Must be last to override other styles */
-@import url("./utilities/display.css");
-@import url("./utilities/spacing.css");
-@import url("./utilities/text.css");
+@import url('./utilities/display.css');

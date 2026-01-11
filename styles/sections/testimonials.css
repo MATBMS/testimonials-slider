@@ -60,6 +60,10 @@
   cursor: not-allowed;
 }
 
+.arrow-btn:disabled .arrow path {
+  stroke: var(--color-gray-400);
+}
+
 /* testimonials */
 .testimonials-text-container {
   width: 311px;

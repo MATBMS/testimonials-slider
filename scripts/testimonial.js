@@ -9,32 +9,45 @@ const btnNext = document.querySelector('#btn-next');
 // Contents
 const testimonials = [
   {
-    text: `“ I\’ve been interested in coding for a while but never taken the jump, until now. I couldn\’t recommend this course enough. I\’m now in the job of my dreams and so excited about the \”`,
+    text: `“ I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future.”`,
     name: 'Tanya Sinclair',
     role: 'UX Engineer',
     photo: './images/image-tanya.jpg',
   },
   {
-    text: `“ If you want to lay the best foundation possible I\’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ”`,
+    text: `“ If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ”`,
     name: 'John Tarkpor',
     role: 'Junior Front-end Developer',
     photo: './images/image-john.jpg',
   },
 ];
 
-// Render
+// Render with animation
 function render(i) {
   // Select testimonials
   const testimonial = testimonials[i];
 
-  // Render text
-  quote.textContent = testimonial.text;
-  userName.textContent = testimonial.name;
-  userRole.textContent = testimonial.role;
+  // Fade out
+  quote.style.opacity = '0';
+  userName.style.opacity = '0';
+  userRole.style.opacity = '0';
+  avatar.style.opacity = '0';
 
-  // Render image
-  avatar.src = testimonial.photo;
-  avatar.alt = `${testimonial.name} portrait`;
+  // Wait for fade out, then update content and fade in
+  setTimeout(() => {
+    // Update content
+    quote.textContent = testimonial.text;
+    userName.textContent = testimonial.name;
+    userRole.textContent = testimonial.role;
+    avatar.src = testimonial.photo;
+    avatar.alt = `${testimonial.name} portrait`;
+
+    // Fade in
+    quote.style.opacity = '1';
+    userName.style.opacity = '1';
+    userRole.style.opacity = '1';
+    avatar.style.opacity = '1';
+  }, 300); // Match this to your transition duration
 }
 
 // Init

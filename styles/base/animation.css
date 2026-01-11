@@ -1,0 +1,6 @@
+.quotes,
+.user-name,
+.user-role,
+.avatar {
+  transition: opacity 0.3s ease-in-out;
+}
